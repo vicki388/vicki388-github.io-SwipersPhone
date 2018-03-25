@@ -1,0 +1,19 @@
+/*CSS File*/
+
+/* make all buttons 20 by 20 pixels with white text and green background and a 10 pixel margin */
+button { width: 150px; height: 20px; background: green; color: white; margin: 10px;  }
+
+/* make all tags with the "cool" class name have blue text */
+.cool { color: blue; }
+
+/*make all tags with the "gesture" class name have the same larger size*/
+.gesture{ width: 300px; height: 300px; background: gray; }
+
+/* make the button with ID "delete" red */
+#delete { background: red; }
+
+/* make the buttons with ID "phone_button" sized and colored correctly */
+.phone { width: 60px; height: 40px; background: gray; color: white; margin: 10px; }
+
+/* make the buttons with ID "phone_large" sized and colored correctly */
+.phone_large { width: 103px; height: 40px; background: gray; color: white; margin: 10px; }
