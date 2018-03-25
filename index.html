@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Address Book</title>
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+		<link rel="stylesheet" href="phone.css">
+	</head>
+	<body>
+	<div class="TabBar" id="TabBar">
+		<button class="cool" id="Dialer">Dialer</button>
+		<button id="Contacts">Contact List</button>
+		<button id="AddContact">Add Contact</button>
+		<button id="TestGestures">Test Gestures</button>
+	</div>
+	<div id="Content">
+		<div id="content_dialer">
+			<label for="name">Dialer</label>
+			<div><input class="className" id="dial_input" placeholder="(555)555-5555"/></div>
+			<div id="firstRow">
+				<button class="phone" id="One">1</button>
+				<button class="phone" id="Two">2</button>
+				<button class="phone" id="Three">3</button>
+			</div>
+			<div id="SecondRow">
+				<button class="phone" id="Four">4</button>
+				<button class="phone" id="Five">5</button>
+				<button class="phone" id="Six">6</button>
+			</div>
+			<div id="ThirdRow">
+				<button class="phone" id="Seven">7</button>
+				<button class="phone" id="Eight">8</button>
+				<button class="phone" id="Nine">9</button>
+			</div>
+			<div id="FourthRow">
+				<button class="phone" id="Star">*</button>
+				<button class="phone" id="Zero">0</button>
+				<button class="phone" id="Hash">#</button>
+			</div>
+			<div id="PhoneButtons">
+				<button class="phone_large" id="Dial">Dial</button>
+				<button class="phone_large" id="Clear">Clear</button>
+			</div>
+		</div>
+		<div id="content_list">
+			<label for="name">Contact List</label>
+			<div id="ContactRow1">
+				<button class="phone_large" id="person1">Carl Friedrich Gauss</button>
+				<button class="phone_large" id="person2">Leonard Euler</button>
+				<button class="phone_large" id="person3">Archimedes</button>
+			</div>
+			<div id="ContactRow2">
+				<button class="phone_large" id="person1">Isaac Newton</button>
+				<button class="phone_large" id="person2">Euclid</button>
+				<button class="phone_large" id="person3">Srinavasa Ramanujan</button>
+			</div>
+		</div>
+		
+		<div id="content_add">
+			<label for="name">Add Contact</label>
+			<form class="pure-form pure-form-stacked">
+				<label for="name">Name</label>
+				<input class="className" id="idName" placeholder="Jane Doe" /></input>
+				<label for="name">Phone Number</label>
+				<input class="classPhone" id="idPhone" placeholder="(123)456-7890"></input>
+				<label for="name">Email Address</label>
+				<input class="classEmail" id="idEmail" placeholder="Jane.Doe@gmail.com"></input>
+				<button id="add_contact">Add Contact</button>
+				<button id="clear">Clear</button>
+			
+			</form>
+		</div>
+		<div id="content_gesture">
+			<div><input class="gesture_output" id="gesture_output"/></div>
+			<div id="gesture_area" class="gesture"></div>
+
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="phone.js"></script>
+
+	</body>
+</html>
